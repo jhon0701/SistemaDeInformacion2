@@ -10,7 +10,7 @@ PLAN DE TRABAJO
 	Versionador GitHub
     Se proporcionara un mismo .OVA del OS con estos requerimientos a cada miembro
 1.2  	ESTANDARES DE PROGRAMACION
-	Para la programacion se seguira el estandar ECMAscrypt2017 Language Especification
+	Para la programacion se seguira el estandar ECMAscrypt2017 (ECMA-262) Language Especification
 *//
 
 PD: arregla esto Jhon, solo esto me falta para el informe, no entiendo bien sobre esto.
