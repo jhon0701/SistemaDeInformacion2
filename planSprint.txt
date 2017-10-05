@@ -1,0 +1,16 @@
+PLAN DE TRABAJO
+
+//*
+1. 	ESTANDARES
+1.1. REQUERIMIENTOS 
+	Se usara un sistema basado en nucleo unix, especificamente OpenSuse42.3, sobre el que trabajaran los miembros del team
+	El lenguaje a usar por todos los miembros del team sera TypeScript
+	Plataforma Angular 
+	Firebase para la base de datos
+	Versionador GitHub
+    Se proporcionara un mismo .OVA del OS con estos requerimientos a cada miembro
+1.2  	ESTANDARES DE PROGRAMACION
+	Para la programacion se seguira el estandar ECMAscrypt2017 Language Especification
+*//
+
+PD: arregla esto Jhon, solo esto me falta para el informe, no entiendo bien sobre esto.
