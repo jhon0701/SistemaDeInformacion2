@@ -2,7 +2,7 @@
 Grupo 3:
   Jhonatan David Condarco C.
   Ronal Heredia Camacho
-  Jose Saul Reque Crespo
+  Jose  Saul  Reque  Crespo
   
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
 
