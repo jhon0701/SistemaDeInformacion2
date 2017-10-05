@@ -1,5 +1,7 @@
 # ProyectoSis2
-
+Grupo 3:
+  Jhonatan David Condarco C.
+  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
 
 ## Development server
