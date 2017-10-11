@@ -1,0 +1,36 @@
+{
+   "users":{
+      "saul":{
+         "name":"Saul Caspa Miranda",
+         "email":"saulcaspamiranda@gmail.com",
+         "password":"saul"
+      },
+      "jhon":{
+         "name":"Jhon",
+         "email":"jhon@gmail.com",
+         "password":"jhon"
+      },
+      "jose":{
+         "name":"Jose",
+         "email":"jose@gmail.com",
+         "password":"jose"
+      },
+      "ronal":{
+         "name":"ronal",
+         "email":"ronal@gmail.com",
+         "password":"ronal"
+      }
+   },
+   "revisor":{
+      "saul":{
+         "name":"Saul Caspa Miranda",
+         "fechaAlta":"2017-10-11",
+         "fechaBaja":"2018-10-11"
+      },
+      "jhon":{
+         "name":"Jhon",
+         "fechaAlta":"2017-10-11",
+         "fechaBaja":"2018-10-11"
+      }
+   }
+}
