@@ -29,7 +29,8 @@ export class AppComponent {
   };
   Send() {
     this.username.push(this.usu);
-    if(!alert('usuario registrado gracias ')){window.location.reload();}
+    if(!alert('usuario esta registrado gracias ')){window.location.reload();}
+  
   }
 }
 export class Usuario{
