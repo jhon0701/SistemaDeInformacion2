@@ -11,6 +11,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Despues de clonar ejecutar:
   npm install
   ng server --open
+  
+## Requisitos
+nodejs 8.6.0 o mayor
+npm 5.4 o mayor
+angular 4
+
 
 
 ## Development server
