@@ -13,8 +13,8 @@ Despues de clonar ejecutar:
   ng server --open
   
 ## Requisitos
-nodejs 8.6.0 o mayor
-npm 5.4 o mayor
+nodejs 8.6.0 o mayor, 
+npm 5.4 o mayor, 
 angular 4
 
 
