@@ -8,15 +8,22 @@ import * as firebase from 'firebase/app';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './user.component.html',
+  templateUrl: './listUser.component.html',
   styleUrls: ['./app.component.css']
+
+
 })
 export class AppComponent {
   user: Observable<firebase.User>;
   username: AngularFireList<{}>;
+  allUser:Observable<any[]>;
+  revisorsRef: AngularFireList<any>;
+  revisors: Observable<any[]>;
   constructor(public afAuth: AngularFireAuth, public af: AngularFireDatabase) {
     this.username = af.list('/users');
-
+    this.revisorsRef = af.list('/revisor');
+    this.revisors = this.revisorsRef.valueChanges();
+    this.allUser = this.username.valueChanges();
     this.user = this.afAuth.authState;
     
   };

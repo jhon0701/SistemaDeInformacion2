@@ -9,21 +9,11 @@
         <th>Email</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody *ngFor="let us of allUser  | async">
       <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
+        <td>{{us.name}}</td>
+        <td>{{us.lastname}}</td>
+        <td>{{us.email}}</td>
       </tr>
     </tbody>
   </table>
