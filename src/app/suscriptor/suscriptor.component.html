@@ -1,0 +1,23 @@
+ <!--listar todos lus user activos -->
+ <div class="container">
+  <h4>LISTA DE REVISORES</h4>
+
+  <select [(ngModel)]="sus"  >
+    <option *ngFor="let suscrip of suscriptor  | async" >{{suscrip.idUsuario}}</option>
+  </select>
+  <br>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#ver">{{sus}}</button>
+    <div id="ver" class="collapse">
+      su ID de trabajo es: {{sus.idUsuario}}
+  </div>
+    <br>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#subir">{{sus}}</button>
+    <div id="subir" class="collapse">
+      pronto lograra subir su proyecto
+  </div>
+    <br>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#estado">{{sus}}</button>
+    <div id="estado" class="collapse">
+      su estado de su trabajo es: {{sus.estado}}
+  </div>
+</div>

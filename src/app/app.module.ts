@@ -14,6 +14,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { UserComponent } from './user/user.component';
 import { AllUserComponent } from './all-user/all-user.component';
 import { RevisorComponent } from './revisor/revisor.component';
+import { DirectorPublicacionComponent } from './director-publicacion/director-publicacion.component';
+import { SuscriptorComponent } from './suscriptor/suscriptor.component';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDxKJbC2LTLrCUZZOyp3Hl9S53Wk608BBI",
@@ -30,7 +32,9 @@ export const firebaseConfig = {
     AppComponent,
     UserComponent,
     AllUserComponent,
-    RevisorComponent
+    RevisorComponent,
+    DirectorPublicacionComponent,
+    SuscriptorComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +57,16 @@ export const firebaseConfig = {
       {
         path: 'revisor',
         component: RevisorComponent
+
+      }
+      ,
+      {
+        path: 'director',
+        component: DirectorPublicacionComponent
+
+      },      {
+        path: 'suscriptor',
+        component: SuscriptorComponent
 
       }
     ])

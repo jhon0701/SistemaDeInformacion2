@@ -9,7 +9,8 @@ import * as firebase from 'firebase/app';
 @Component({
   selector: 'app-all-user',
   templateUrl: './all-user.component.html',
-  styleUrls: ['./all-user.component.css']
+  styleUrls: ['./all-user.component.css'],
+  providers: [AngularFireAuth]
 })
 export class AllUserComponent implements OnInit {
   user: Observable<firebase.User>;

@@ -1,0 +1,19 @@
+ <div class="container">
+  <h4>LISTA DE TRABAJOS</h4>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Area</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let trabajo of trabajos  | async">
+      <tr>
+        <td>{{trabajo.nombreTrabajo}}</td>
+        <td>{{trabajo.area}}</td>
+        <td><button type="button" trabajo onclick="alert('aprobado')">{{trabajo.estado}}</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
