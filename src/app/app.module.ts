@@ -17,6 +17,11 @@ import { RevisorComponent } from './revisor/revisor.component';
 import { DirectorPublicacionComponent } from './director-publicacion/director-publicacion.component';
 import { SuscriptorComponent } from './suscriptor/suscriptor.component';
 
+// for AngularFireDatabase
+
+import { AngularFireAuth } from 'angularfire2/auth';
+
+
 export const firebaseConfig = {
   apiKey: "AIzaSyDxKJbC2LTLrCUZZOyp3Hl9S53Wk608BBI",
   authDomain: "proyecto-sistemas-2.firebaseapp.com",
