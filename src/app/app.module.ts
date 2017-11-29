@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-
+import { FormControl } from '@angular/forms';
 import { AngularFireModule } from 'angularfire2';
 import { FormsModule }   from '@angular/forms'; // <-- NgModel lives here
 
@@ -48,6 +48,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     HttpModule,
+    FormsModule,
     RouterModule.forRoot([
       {
         path: 'user',

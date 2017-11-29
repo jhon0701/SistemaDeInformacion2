@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase, AngularFireList} from "angularfire2/database"; 
 import { AngularFireAuth } from 'angularfire2/auth';
 import { FirebaseListObservable } from "angularfire2/database-deprecated"; 
-
+import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs/Observable';
 import * as firebase from 'firebase/app';
 
@@ -18,11 +18,14 @@ export class SuscriptorComponent implements OnInit {
     this.suscriptorRef = af.list('/suscriptor');
     this.suscriptor = this.suscriptorRef.valueChanges();    
   }
-  sus  :Suscriptor ={
+  susc=undefined;
+ 
+
+  sus  : Suscriptor ={
     estado : "",
     idTrabajo : "",
     idUsuario : ""
-  };;
+  };
  
 
   ngOnInit() {

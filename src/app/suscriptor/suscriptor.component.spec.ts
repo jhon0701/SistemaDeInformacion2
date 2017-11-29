@@ -18,8 +18,29 @@ describe('SuscriptorComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  try {
+      it('should create', () => {
+        expect(component.suscriptor).toBeTruthy();
+      });
+  }
+  catch(err) {      
+        throw("AngularFire bad conecction");
+  }
+   try {
+      it('should create', () => {
+        expect(component.suscriptor.map).toBeLessThanOrEqual(0);
+      });
+  }
+  catch(err) {      
+        throw("no funcion defined");
+  }
+  try {
+      it('should Verificate', () => {
+        expect(component.suscriptor[0].child('/estado')).toBe("enProceso");
+      });
+  }
+  catch(err) {      
+        throw("no acces");
+  }
+  
 });

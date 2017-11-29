@@ -13,7 +13,7 @@ import * as firebase from 'firebase/app';
 describe('DirectorPublicacionComponent', () => {
   let component: DirectorPublicacionComponent;
   let fixture: ComponentFixture<DirectorPublicacionComponent>;
-
+  let trabajos: Observable<any[]>;
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ DirectorPublicacionComponent ]
@@ -25,8 +25,23 @@ describe('DirectorPublicacionComponent', () => {
     fixture = TestBed.createComponent(DirectorPublicacionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+    trabajos = component.trabajos;
   });
-  it('should create', () => {
-    alert(fixture);
-  });
+  try {
+      it('should create', () => {
+        expect(trabajos).toBe(undefined);
+      });
+  }
+  catch(err) {      
+        throw("AngularFire bad conecction");
+  }
+  try {
+      it('should create', () => {
+        expect(trabajos).toBeDefined(String);
+      });
+  }
+  catch(err) {      
+        throw("AngularFire bad conecction");
+  }
+
 });
